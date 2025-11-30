@@ -1,15 +1,18 @@
 import React from "react";
-import HeaderImg from "../assets/cuisines.jpg"
-const Header=()=>{
-return (
+import HeaderImg from "../assets/cuisines.jpg";
+import "./Header.css";
+
+const Header = () => {
+  return (
     <>
-    <header>
+      <header className="header">
         <h1>Cuisines by Srv</h1>
-        <div>
-            <img src="Headerimg"></img>
-        </div>
-    </header>
+        <button>Cart</button>
+      </header>
+      <div className="main-image">
+        <img src={HeaderImg}></img>
+      </div>
     </>
-)
-}
+  );
+};
 export default Header;
