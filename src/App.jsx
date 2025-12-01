@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from "./Layout/Header";
 import './App.css'
-import MealsSummary from './Meals/MealsSummary';
+import Meals from './Meals/Meals';
 
 function App() {
     return (
     <>
       <Header/>
-      <MealsSummary/>
+      <Meals/>
     </>
   )
 }

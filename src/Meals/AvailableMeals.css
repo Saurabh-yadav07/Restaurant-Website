@@ -1,0 +1,19 @@
+.list {
+    list-style: none;
+    display:flex;
+    margin: auto;
+    width: 90%;
+    flex-direction: column;
+    background-color: rgb(23, 77, 6);
+    row-gap: 1rem;
+    justify-content: center;
+}
+.list-item {
+    display: flex;
+    background-color: brown;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    color: beige;
+    justify-content: center;
+}
