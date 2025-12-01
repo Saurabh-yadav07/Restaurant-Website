@@ -1,0 +1,40 @@
+.meal {
+  padding: 1.5rem;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  text-align: left;
+  flex-wrap: wrap;   /* IMPORTANT for responsive design */
+}
+
+.meal h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.description {
+  font-style: italic;
+  opacity: 0.85;
+  margin: 0.4rem 0;
+  color: #e8e8e8;
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #ffcc70;
+  font-size: 1.2rem;
+}

@@ -1,19 +1,16 @@
 .list {
-    list-style: none;
-    display:flex;
-    margin: auto;
-    width: 90%;
-    flex-direction: column;
-    background-color: rgb(23, 77, 6);
-    row-gap: 1rem;
-    justify-content: center;
-}
-.list-item {
-    display: flex;
-    background-color: brown;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 10px;
-    color: beige;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 900px;   /* prevents ultra-wide stretch */
+  margin: 0 auto;
+  gap: 1.2rem;
+
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
