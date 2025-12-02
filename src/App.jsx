@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
 import Header from "./Layout/Header";
-import './App.css'
-import Meals from './Meals/Meals';
+import "./App.css";
+import Meals from "./Meals/Meals";
+import Cart from "./Cart/Cart";
 
 function App() {
-    return (
+  return (
     <>
-      <Header/>
-      <Meals/>
+      <Cart />
+      <Header />
+      <Meals />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

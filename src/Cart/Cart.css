@@ -1,0 +1,63 @@
+/* Background overlay */
+.cart-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: 50;
+}
+
+/* Modal box */
+.cart-modal {
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 30rem;
+  z-index: 100;
+  animation: fade-slide 300ms ease-out;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Button styling */
+button {
+  background: #8a2b06;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #641e03;
+}
+
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
