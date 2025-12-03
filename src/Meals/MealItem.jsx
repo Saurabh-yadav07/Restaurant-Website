@@ -14,7 +14,7 @@ const MealItem = (props) => {
               <h4 className="price">${meal.price}</h4>
             </div>
             <div>
-              <MealItemForm id={meal.id} />
+              <MealItemForm id={meal.id} onClick={props.onClick} />
             </div>
           </li>
         );
