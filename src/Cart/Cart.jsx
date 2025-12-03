@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 import CartPortal from "../UI/CartPortal";
 
-const Cart = () => {
+const Cart = (props) => {
   const cartItems = (
     <ul>
       {[
@@ -23,7 +23,7 @@ const Cart = () => {
           <span>35.98</span>
         </div>
         <div className="cart-actions">
-          <button>Close</button>
+          <button onClick={props.onClose}>Close</button>
           <button>Order</button>
         </div>
       </div>
