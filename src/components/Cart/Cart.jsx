@@ -10,7 +10,18 @@ const Cart = (props) => {
     <ul>
       {cartCtx.items.map((item) => (
         <li key={item.id}>
-          {item.name} x {item.amount} — ₹{(item.price * item.amount).toFixed(2)}
+          <div className="cart-item-info">
+            <span>{item.name}</span>
+            <span>x {item.amount}</span>
+            <span>₹{(item.price * item.amount).toFixed(2)}</span>
+          </div>
+
+          <div className="cart-item-actions">
+            <button onClick={() => cartCtx.removeItem(item.id)}>−</button>
+            <button onClick={() => cartCtx.addItem({ ...item, amount: 1 })}>
+              +
+            </button>
+          </div>
         </li>
       ))}
     </ul>
