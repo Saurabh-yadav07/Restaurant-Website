@@ -1,0 +1,27 @@
+.button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #ecf389;
+    color: rgb(30, 15, 15);
+    padding: 0.75rem 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .button:hover {
+    background-color: #47b724;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    }
+    .badge {
+    background-color: #1c120e;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import HeaderImg from "../assets/cuisines.jpg";
-import "./Header.css";
+import HeaderImg from "../../assets/FoodPic.jpg";
+import './Header.css';
+import HeaderCartButton from "./HeaderCartButton";
 import Cart from "../Cart/Cart";
-import CartButton from "../Cart/CartButton";
 
 const Header = () => {
   const [showCart, setShowCart] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
 
       <header className="header">
         <h1>Cuisines by Srv</h1>
-        <CartButton onClick={showCartHandler}>My Cart</CartButton>
+        <HeaderCartButton onClick={showCartHandler} />
       </header>
 
       <div className="main-image">

@@ -14,26 +14,18 @@
   z-index: 10;
 }
 
-.header button {
-  background: #d94a3a;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.header button:hover {
-  background: #b83b2a;
-}
-
 .main-image {
   width: 100%;
   height: 20rem;
-  object-fit: cover;
+  overflow: hidden;       /* prevents overflow */
   margin-top: 4rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   border-radius: 0 0 16px 16px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* THIS is what makes the image cover */
+  display: block;         /* removes weird bottom white gaps */
 }
